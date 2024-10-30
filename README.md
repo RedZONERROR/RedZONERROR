@@ -9,6 +9,7 @@ I'm a passionate software developer with expertise in multiple programming langu
 * HTML
 * JavaScript
 * PHP
+* Python
 * MySQL
 * MongoDB
 * Shell
@@ -22,7 +23,7 @@ I'm a passionate software developer with expertise in multiple programming langu
 **Skills**
 ----------
 
-* Programming languages: C, C++, Java, JavaScript, PHP, Lua
+* Programming languages: C, C++, Java, JavaScript, PHP, Lua, Python 
 * Web development: HTML, CSS, JavaScript, React, codeigniter, laravel, node js
 * Databases: MySQL, MongoDB, PostgreSQL
 * Operating Systems: Windows, Linux, macOS
