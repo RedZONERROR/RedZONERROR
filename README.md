@@ -12,10 +12,12 @@ I'm a passionate software developer with expertise in multiple programming langu
 * Python
 * MySQL
 * MongoDB
+* PostgreSQL
 * Shell
 * Lua
 * C++
 * Java
+* kotlin
 * Android Application Development
 * Server-Side Development
 * Windows Application Development
@@ -23,10 +25,10 @@ I'm a passionate software developer with expertise in multiple programming langu
 **Skills**
 ----------
 
-* Programming languages: C, C++, Java, JavaScript, PHP, Lua, Python 
+* Programming languages: C, C++, Java, JavaScript, PHP, Lua, Python, Kotlin
 * Web development: HTML, CSS, JavaScript, React, codeigniter, laravel, node js
 * Databases: MySQL, MongoDB, PostgreSQL
-* Operating Systems: Windows, Linux, macOS
+* Operating Systems: Windows, Linux, Android
 
 **Contact Me**
 --------------
