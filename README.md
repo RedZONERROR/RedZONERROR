@@ -52,7 +52,6 @@ I'm a passionate software developer with expertise across multiple technologies.
 ![Bitcoin](https://img.shields.io/badge/Bitcoin-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 ![Web3.js](https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
-![Hyperledger](https://img.shields.io/badge/Hyperledger-2F3134?style=for-the-badge&logo=hyperledger&logoColor=white)
 
 ### 🔐 Security & Pentesting
 
@@ -61,6 +60,14 @@ I'm a passionate software developer with expertise across multiple technologies.
 ![Metasploit](https://img.shields.io/badge/Metasploit-4285F4?style=for-the-badge&logo=metasploit&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6C37?style=for-the-badge&logo=burp-suite&logoColor=white)
 ![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white)
+
+### 🔍 Reverse Engineering
+
+![IDA Pro](https://img.shields.io/badge/IDA_Pro-5C2D91?style=for-the-badge&logo=ida-pro&logoColor=white)
+![Ghidra](https://img.shields.io/badge/Ghidra-4A154B?style=for-the-badge&logo=ghidra&logoColor=white)
+![x64dbg](https://img.shields.io/badge/x64dbg-0078D4?style=for-the-badge&logo=x64dbg&logoColor=white)
+![Radare2](https://img.shields.io/badge/Radare2-FF6B6B?style=for-the-badge&logo=radare2&logoColor=white)
+![Binary Ninja](https://img.shields.io/badge/Binary_Ninja-FF7F00?style=for-the-badge&logo=binary-ninja&logoColor=white)
 
 ### 🗄️ Databases
 
