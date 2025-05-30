@@ -10,25 +10,35 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         :root {
-            --primary-color: #f70000;
-            --secondary-color: #2c2f33;
-            --text-color: #f9f9f9;
-            --accent-color: #ff6b6b;
-            --dark-bg: #1a1a1a;
-            --card-bg: #2d2d2d;
+            --primary-color: #ff4757; /* Vibrant Red */
+            --secondary-color: #34495e; /* Dark Blue-Gray */
+            --text-color: #ecf0f1; /* Light Gray */
+            --accent-color: #e67e22; /* Orange */
+            --dark-bg: #2c3e50; /* Midnight Blue */
+            --card-bg: #34495e; /* Dark Blue-Gray, slightly lighter than bg */
+            --light-bg: #ecf0f1; /* Light Gray for light mode */
+            --light-text-color: #2c3e50; /* Dark Blue for light mode text */
+            --light-card-bg: #ffffff; /* White for light mode cards */
+            --success-color: #2ecc71; /* Green */
+            --info-color: #3498db;    /* Blue */
+            --warning-color: #f1c40f; /* Yellow */
+            --danger-color: #e74c3c;  /* Red */
+            --font-primary: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-secondary: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: var(--font-primary);
         }
         
         body {
             background-color: var(--dark-bg);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
         .container {
@@ -38,10 +48,11 @@
         }
         
         header {
-            background-color: var(--secondary-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
             padding: 20px 0;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         /* Cat animation */
@@ -63,25 +74,33 @@
         }
         
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: var(--text-color); /* Changed to text-color for better contrast on gradient */
             animation: fadeInDown 1s;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .typing-text {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-bottom: 30px;
-            min-height: 40px;
+            min-height: 50px;
+            color: var(--accent-color);
+            font-family: var(--font-secondary);
+            font-weight: 500;
         }
         
         .profile-img {
-            width: 200px;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
             border-radius: 50%;
-            border: 5px solid var(--primary-color);
+            border: 7px solid var(--accent-color);
             animation: pulse 2s infinite;
-            margin: 20px auto;
+            margin: 30px auto;
             display: block;
+            box-shadow: 0 0 25px rgba(255, 107, 107, 0.5);
         }
         
         .counter {
@@ -100,9 +119,24 @@
         
         h2 {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5rem;
-            color: var(--accent-color);
+            margin-bottom: 50px;
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
         }
         
         .about-content {
@@ -148,24 +182,30 @@
         
         .skill-category {
             background-color: var(--card-bg);
-            border-radius: 10px;
-            padding: 20px;
+            border-radius: 15px;
+            padding: 25px;
             width: 100%;
             max-width: 500px;
             margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid var(--primary-color);
         }
         
         .skill-category:hover {
-            transform: translateY(-10px);
+            transform: translateY(-12px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
         }
         
         .skill-category h3 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             color: var(--accent-color);
-            font-size: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-bottom: 2px dashed var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
         }
         
         .skills-list {
@@ -176,13 +216,14 @@
         }
         
         .skill-badge {
-            padding: 8px 15px;
-            border-radius: 5px;
-            background-color: #333;
+            padding: 10px 18px;
+            border-radius: 25px; /* Pill shape */
             color: white;
-            font-weight: bold;
+            font-weight: 500;
             transition: all 0.3s ease;
             cursor: pointer;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         
         .skill-badge:hover {
@@ -198,12 +239,18 @@
         
         .stat-card {
             background-color: var(--card-bg);
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 20px;
             width: 100%;
             max-width: 350px;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.4);
         }
         
         .stat-card img {
@@ -221,14 +268,16 @@
         }
         
         .contact-link {
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 25px; /* Pill shape */
             color: white;
             text-decoration: none;
-            font-weight: bold;
-            display: flex;
+            font-weight: 500;
+            display: inline-flex; /* Changed to inline-flex */
             align-items: center;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
         
         .contact-link:hover {
@@ -253,8 +302,9 @@
         
         footer {
             text-align: center;
-            padding: 30px 0;
+            padding: 40px 0;
             background-color: var(--secondary-color);
+            border-top: 5px solid var(--primary-color);
         }
         
         .cat-animation {
@@ -264,20 +314,23 @@
         }
         
         .download-btn {
-            background-color: var(--primary-color);
+            background-color: var(--success-color);
             color: white;
             border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-size: 1rem;
+            padding: 15px 30px;
+            border-radius: 25px; /* Pill shape */
+            font-size: 1.1rem;
+            font-weight: 600;
             cursor: pointer;
             margin-top: 20px;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
         }
         
         .download-btn:hover {
-            background-color: #d10000;
-            transform: scale(1.05);
+            background-color: #27ae60; /* Darker green */
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 204, 113, 0.5);
         }
 
         /* Dark/Light mode toggle */
@@ -341,6 +394,18 @@
         }
 
         /* Custom cursor with cat paw */
+        .light-mode .skill-category {
+            border-left: 5px solid var(--accent-color);
+        }
+        .light-mode h2::after {
+             background-color: var(--primary-color);
+        }
+        .light-mode .skill-category h3 {
+            border-bottom: 2px dashed var(--accent-color);
+        }
+        .light-mode footer {
+            border-top: 5px solid var(--accent-color);
+        }
         .custom-cursor {
             position: fixed;
             width: 30px;
@@ -361,20 +426,13 @@
         <i class="fas fa-moon"></i>
     </div>
 
-    <header>
-        <div class="container">
-            <div class="cat-container">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBxaThrMnJkbWFzMHRvZHBsZ2RqenQ2dTNuM3I0ZmRxcDl1aW9qOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif" alt="Walking Cat" width="80">
-            </div>
-        </div>
-    </header>
 
     <section class="hero">
         <div class="container">
             <h1 class="animate__animated animate__fadeInDown">👋 Hi there, I'm RedZONERROR</h1>
             <div id="typingText" class="typing-text animate__animated animate__fadeIn"></div>
             <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamI3bmYxazh0c3Awd3JnZnc2dG53aXNpd3pyN3Q5M2hsb2dkcjRsYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPnAiaMCws8nOsE/giphy.gif" alt="Profile" class="profile-img animate__animated animate__fadeIn">
-            <div class="counter animate__animated animate__fadeIn">Profile Views: <span id="viewCount">0</span></div>
+            <div class="counter animate__animated animate__fadeIn"><img src="https://komarev.com/ghpvc/?username=redzonerror&style=flat-square&color=red" alt="Profile Views"></div>
         </div>
     </section>
 
@@ -597,15 +655,6 @@
             setTimeout(type, typingDelay);
         }
 
-        // Profile view counter
-        let viewCount = Math.floor(Math.random() * 1000) + 500;
-        document.getElementById('viewCount').textContent = viewCount;
-        
-        setInterval(() => {
-            viewCount += Math.floor(Math.random() * 3) + 1;
-            document.getElementById('viewCount').textContent = viewCount;
-        }, 10000);
-
         // Fade-in animation on scroll
         const fadeElements = document.querySelectorAll('.fade-in');
         
@@ -670,17 +719,23 @@
         
         themeToggle.addEventListener('click', function() {
             if (isDarkMode) {
-                document.documentElement.style.setProperty('--dark-bg', '#f9f9f9');
-                document.documentElement.style.setProperty('--card-bg', '#ffffff');
-                document.documentElement.style.setProperty('--text-color', '#333');
-                document.documentElement.style.setProperty('--secondary-color', '#e9e9e9');
+                document.documentElement.style.setProperty('--dark-bg', 'var(--light-bg)');
+                document.documentElement.style.setProperty('--card-bg', 'var(--light-card-bg)');
+                document.documentElement.style.setProperty('--text-color', 'var(--light-text-color)');
+                document.documentElement.style.setProperty('--secondary-color', '#e0e0e0'); /* Lighter secondary for light mode */
+                document.documentElement.style.setProperty('--primary-color', '#ff6347'); /* Tomato for light mode primary */
+                document.documentElement.style.setProperty('--accent-color', '#ffa500'); /* Orange for light mode accent */
                 this.innerHTML = '<i class="fas fa-sun"></i>';
+                document.body.classList.add('light-mode');
             } else {
-                document.documentElement.style.setProperty('--dark-bg', '#1a1a1a');
-                document.documentElement.style.setProperty('--card-bg', '#2d2d2d');
-                document.documentElement.style.setProperty('--text-color', '#f9f9f9');
-                document.documentElement.style.setProperty('--secondary-color', '#2c2f33');
+                document.documentElement.style.setProperty('--dark-bg', '#2c3e50'); /* Midnight Blue */
+                document.documentElement.style.setProperty('--card-bg', '#34495e'); /* Dark Blue-Gray */
+                document.documentElement.style.setProperty('--text-color', '#ecf0f1'); /* Light Gray */
+                document.documentElement.style.setProperty('--secondary-color', '#34495e');
+                document.documentElement.style.setProperty('--primary-color', '#ff4757'); /* Vibrant Red */
+                document.documentElement.style.setProperty('--accent-color', '#e67e22'); /* Orange */
                 this.innerHTML = '<i class="fas fa-moon"></i>';
+                document.body.classList.remove('light-mode');
             }
             isDarkMode = !isDarkMode;
         });

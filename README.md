@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi there, I'm RedZONERROR
+# 👋 Hi there, I'm RedZONERROR <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" alt="Cat animation">
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Mobile+App+Developer;Software+Engineer;Database+Expert)](https://git.io/typing-svg)
 
@@ -125,7 +125,7 @@ I'm a passionate software developer with expertise across multiple technologies.
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamI3bmYxazh0c3Awd3JnZnc2dG53aXNpd3pyN3Q5M2hsb2dkcjRsYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPnAiaMCws8nOsE/giphy.gif" width="200">
 
 <p>
-<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Remember to stay curious and keep coding! <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBxaThrMnJkbWFzMHRvZHBsZ2RqenQ2dTNuM3I0ZmRxcDl1aW9qOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif" width="30">
+ Remember to stay curious and keep coding!
 </p>
 
 </div>
