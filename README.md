@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi there, I'm RedZONERROR <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" alt="Cat animation">
+# 👋 Hi there, I'm RedZONERROR
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Mobile+App+Developer;Software+Engineer;Database+Expert)](https://git.io/typing-svg)
 
@@ -12,7 +12,7 @@
 
 I'm a passionate software developer with expertise across multiple technologies. I love building innovative solutions and exploring new technologies.
 
-- 🔭 I'm currently working on:
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" alt="Cat animation" width="30"> I'm currently working on:
   - Creating innovative new software projects from scratch
   - Improving existing projects with advanced features
   - Performing complex data migration between different systems
