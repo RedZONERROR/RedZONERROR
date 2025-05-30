@@ -1,38 +1,705 @@
-<h1 style="color: blue;">Hi there, I'm <a href="https://github.com/redzonerror">RedZONERROR</a> 👋</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedZONERROR - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --primary-color: #f70000;
+            --secondary-color: #2c2f33;
+            --text-color: #f9f9f9;
+            --accent-color: #ff6b6b;
+            --dark-bg: #1a1a1a;
+            --card-bg: #2d2d2d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--secondary-color);
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
 
-<h2 style="color: green;">About Me</h2>
+        /* Cat animation */
+        .cat-container {
+            position: absolute;
+            bottom: 0;
+            left: -100px;
+            animation: catWalk 15s linear infinite;
+        }
 
-I'm a passionate software developer with expertise in multiple programming languages, including:
+        @keyframes catWalk {
+            0% { left: -100px; }
+            100% { left: 100%; }
+        }
 
-<ul>
-  <li style="color: red;">C</li>
-  <li style="color: blue;">HTML</li>
-  <li style="color: yellow;">JavaScript</li>
-  <li style="color: purple;">PHP</li>
-  <li style="color: orange;">MySQL</li>
-  <li style="color: pink;">MongoDB</li>
-  <li style="color: brown;">Shell</li>
-  <li style="color: gray;">Lua</li>
-  <li style="color: black;">C++</li>
-  <li style="color: green;">Java</li>
-  <li style="color: red;">Android Application Development</li>
-  <li style="color: blue;">Server-Side Development</li>
-  <li style="color: yellow;">Windows Application Development</li>
-</ul>
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            animation: fadeInDown 1s;
+        }
+        
+        .typing-text {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            min-height: 40px;
+        }
+        
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid var(--primary-color);
+            animation: pulse 2s infinite;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .counter {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+        
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: var(--accent-color);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .about-list {
+            list-style-type: none;
+        }
+        
+        .about-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .about-list i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .skill-category {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-10px);
+        }
+        
+        .skill-category h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .skill-badge {
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .skill-badge:hover {
+            transform: scale(1.1);
+        }
+        
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .stat-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stat-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .contact-link {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-link i {
+            margin-right: 10px;
+        }
+        
+        .email-link {
+            background-color: #DB4437;
+        }
+        
+        .github-link {
+            background-color: #333;
+        }
+        
+        .telegram-link {
+            background-color: #0088cc;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: var(--secondary-color);
+        }
+        
+        .cat-animation {
+            max-width: 150px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .download-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: #d10000;
+            transform: scale(1.05);
+        }
 
-<h2 style="color: green;">Skills</h2>
+        /* Dark/Light mode toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--card-bg);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
 
-* <font color="blue">Programming languages:</font> C, C++, Java, JavaScript, PHP, Lua
-* <font color="red">Web development:</font> HTML, CSS, JavaScript, React, CodeIgniter, Laravel, Node.js
-* <font color="purple">Databases:</font> MySQL, MongoDB, PostgreSQL
-* <font color="orange">Operating Systems:</font> Windows, Linux, macOS
+        .theme-toggle i {
+            font-size: 1.5rem;
+            color: var(--text-color);
+        }
 
-<h2 style="color: green;">Contact Me</h2>
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .skill-category {
+                max-width: 100%;
+            }
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-* <font color="blue">Email:</font> <a href="mailto:redzonerror@gmail.com">redzonerror@gmail.com</a>
-* <font color="red">GitHub:</font> <a href="https://github.com/redzonerror">RedZONERROR</a>
-* <font color="yellow">Telegram:</font> <a href="https://t.me/redzonerror">RedZONERROR</a>
+        /* Download animation */
+        @keyframes downloadStart {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
 
-<h3 style="color: green;">Thanks for visiting my profile!</h3> 😊
+        .downloading {
+            animation: downloadStart 0.5s ease;
+        }
 
-If you want to collaborate on a project or need help with something, feel free to reach out to me.
+        /* Custom cursor with cat paw */
+        .custom-cursor {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            pointer-events: none;
+            z-index: 9999;
+            display: none;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom cursor -->
+    <img src="https://i.imgur.com/hCgJRsK.png" alt="Cat paw cursor" class="custom-cursor">
+
+    <!-- Theme toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="cat-container">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBxaThrMnJkbWFzMHRvZHBsZ2RqenQ2dTNuM3I0ZmRxcDl1aW9qOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif" alt="Walking Cat" width="80">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">👋 Hi there, I'm RedZONERROR</h1>
+            <div id="typingText" class="typing-text animate__animated animate__fadeIn"></div>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamI3bmYxazh0c3Awd3JnZnc2dG53aXNpd3pyN3Q5M2hsb2dkcjRsYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPnAiaMCws8nOsE/giphy.gif" alt="Profile" class="profile-img animate__animated animate__fadeIn">
+            <div class="counter animate__animated animate__fadeIn">Profile Views: <span id="viewCount">0</span></div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>🧠 About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate software developer with expertise across multiple technologies. I love building innovative solutions and exploring new technologies.</p>
+                    <ul class="about-list">
+                        <li>
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <strong>I'm currently working on:</strong>
+                                <ul>
+                                    <li>Creating innovative new software projects from scratch</li>
+                                    <li>Improving existing projects with advanced features</li>
+                                    <li>Performing complex data migration between different systems</li>
+                                    <li>Developing secure and scalable applications</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fas fa-seedling"></i> <span>I'm continuously learning and improving my skills</span></li>
+                        <li><i class="fas fa-comments"></i> <span>Ask me about anything tech-related</span></li>
+                        <li><i class="fas fa-coffee"></i> <span>Fun fact: I code best with a cup of coffee ☕</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <h2>🛠️ Tech Stack</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>💻 Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #00599C">C</div>
+                        <div class="skill-badge" style="background-color: #00599C">C++</div>
+                        <div class="skill-badge" style="background-color: #ED8B00">Java</div>
+                        <div class="skill-badge" style="background-color: #F7DF1E; color: black">JavaScript</div>
+                        <div class="skill-badge" style="background-color: #777BB4">PHP</div>
+                        <div class="skill-badge" style="background-color: #3776AB">Python</div>
+                        <div class="skill-badge" style="background-color: #0095D5">Kotlin</div>
+                        <div class="skill-badge" style="background-color: #2C2D72">Lua</div>
+                        <div class="skill-badge" style="background-color: #121011">Shell Script</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🌐 Web Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #E34F26">HTML5</div>
+                        <div class="skill-badge" style="background-color: #1572B6">CSS3</div>
+                        <div class="skill-badge" style="background-color: #20232A">React</div>
+                        <div class="skill-badge" style="background-color: #FF2D20">Laravel</div>
+                        <div class="skill-badge" style="background-color: #EF4223">CodeIgniter</div>
+                        <div class="skill-badge" style="background-color: #43853D">Node.js</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🔗 Blockchain</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #3C3C3D">Ethereum</div>
+                        <div class="skill-badge" style="background-color: #F7931A">Bitcoin</div>
+                        <div class="skill-badge" style="background-color: #363636">Solidity</div>
+                        <div class="skill-badge" style="background-color: #F16822">Web3.js</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🔐 Security & Pentesting</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #557C94">Kali Linux</div>
+                        <div class="skill-badge" style="background-color: #1679A7">Wireshark</div>
+                        <div class="skill-badge" style="background-color: #4285F4">Metasploit</div>
+                        <div class="skill-badge" style="background-color: #FF6C37">Burp Suite</div>
+                        <div class="skill-badge" style="background-color: #000000">OWASP</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🔍 Reverse Engineering</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #5C2D91">IDA Pro</div>
+                        <div class="skill-badge" style="background-color: #4A154B">Ghidra</div>
+                        <div class="skill-badge" style="background-color: #FF6B6B">Radare2</div>
+                        <div class="skill-badge" style="background-color: #FF7F00">Binary Ninja</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🤖 Automation & DevOps</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #2496ED">Docker</div>
+                        <div class="skill-badge" style="background-color: #D24939">Jenkins</div>
+                        <div class="skill-badge" style="background-color: #2088FF">GitHub Actions</div>
+                        <div class="skill-badge" style="background-color: #62E0D9">n8n</div>
+                        <div class="skill-badge" style="background-color: #FF6F00">AI Automation</div>
+                        <div class="skill-badge" style="background-color: #FF4A00">Zapier</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🗄️ Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #005C84">MySQL</div>
+                        <div class="skill-badge" style="background-color: #4EA94B">MongoDB</div>
+                        <div class="skill-badge" style="background-color: #316192">PostgreSQL</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📱 Mobile & Desktop</h3>
+                    <div class="skills-list">
+                        <div class="skill-badge" style="background-color: #3DDC84">Android</div>
+                        <div class="skill-badge" style="background-color: #0078D6">Windows</div>
+                        <div class="skill-badge" style="background-color: #FCC624; color: black">Linux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="fade-in">
+        <div class="container">
+            <h2>📊 GitHub Stats</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&theme=radical&count_private=true" alt="RedZONERROR's GitHub Stats">
+                </div>
+                <div class="stat-card">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=redzonerror&theme=radical" alt="RedZONERROR's GitHub Streak">
+                </div>
+                <div class="stat-card">
+                    <h3 style="margin-bottom: 15px; color: var(--accent-color);">Languages by Code Volume</h3>
+                    <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=redzonerror&layout=compact&theme=radical&langs_count=10&count_private=true&hide=jupyter%20notebook,tex&include_all_commits=true&card_width=320" alt="RedZONERROR's Top Languages">
+                </div>
+                <div class="stat-card">
+                    <h3 style="margin-bottom: 15px; color: var(--accent-color);">Languages by Repository</h3>
+                    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=redzonerror&theme=radical" alt="Language Breakdown">
+                </div>
+                <div class="stat-card">
+                    <h3 style="margin-bottom: 15px; color: var(--accent-color);">Languages by Commit</h3>
+                    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=redzonerror&theme=radical" alt="Most Used Languages by Commit">
+                </div>
+                <div class="stat-card">
+                    <h3 style="margin-bottom: 15px; color: var(--accent-color);">Real-time Contributions</h3>
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=redzonerror&theme=redical&bg_color=20232a&hide_border=true" alt="RedZONERROR's Contribution Graph">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>📫 Connect With Me</h2>
+            <div class="contact-links">
+                <a href="mailto:redzonerror@gmail.com" class="contact-link email-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/redzonerror" target="_blank" class="contact-link github-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://t.me/redzonerror" target="_blank" class="contact-link telegram-link">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <button id="downloadBtn" class="download-btn">
+                    <i class="fas fa-download"></i> Download My CV
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" class="cat-animation" alt="Cat animation">
+            <p>
+                <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Remember to stay curious and keep coding! <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBxaThrMnJkbWFzMHRvZHBsZ2RqenQ2dTNuM3I0ZmRxcDl1aW9qOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif" width="30">
+            </p>
+            <p>&copy; 2025 RedZONERROR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Typing animation
+        const typingText = document.getElementById('typingText');
+        const texts = ["Full Stack Developer", "Mobile App Developer", "Software Engineer", "Database Expert"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingDelay = 100;
+
+        function type() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                typingDelay = 50;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                typingDelay = 100;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                typingDelay = 1000;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typingDelay = 500;
+            }
+
+            setTimeout(type, typingDelay);
+        }
+
+        // Profile view counter
+        let viewCount = Math.floor(Math.random() * 1000) + 500;
+        document.getElementById('viewCount').textContent = viewCount;
+        
+        setInterval(() => {
+            viewCount += Math.floor(Math.random() * 3) + 1;
+            document.getElementById('viewCount').textContent = viewCount;
+        }, 10000);
+
+        // Fade-in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        function checkFade() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < window.innerHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Download animation
+        const downloadBtn = document.getElementById('downloadBtn');
+        downloadBtn.addEventListener('click', function() {
+            this.classList.add('downloading');
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Downloading...';
+            
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-check"></i> Downloaded!';
+                
+                // Add cat animation on download
+                const catImg = document.createElement('img');
+                catImg.src = 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBxaThrMnJkbWFzMHRvZHBsZ2RqenQ2dTNuM3I0ZmRxcDl1aW9qOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif';
+                catImg.style.position = 'fixed';
+                catImg.style.width = '100px';
+                catImg.style.left = '50%';
+                catImg.style.top = '50%';
+                catImg.style.transform = 'translate(-50%, -50%)';
+                catImg.style.zIndex = '1000';
+                document.body.appendChild(catImg);
+                
+                // Make cat run around the screen
+                let posX = 50;
+                let posY = 50;
+                let dirX = 1;
+                let dirY = 1;
+                
+                const catInterval = setInterval(() => {
+                    posX += dirX * 2;
+                    posY += dirY * 2;
+                    
+                    if (posX > 90 || posX < 10) dirX *= -1;
+                    if (posY > 90 || posY < 10) dirY *= -1;
+                    
+                    catImg.style.left = posX + '%';
+                    catImg.style.top = posY + '%';
+                }, 50);
+                
+                setTimeout(() => {
+                    clearInterval(catInterval);
+                    document.body.removeChild(catImg);
+                    this.innerHTML = '<i class="fas fa-download"></i> Download My CV';
+                    this.classList.remove('downloading');
+                }, 3000);
+            }, 2000);
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        let isDarkMode = true;
+        
+        themeToggle.addEventListener('click', function() {
+            if (isDarkMode) {
+                document.documentElement.style.setProperty('--dark-bg', '#f9f9f9');
+                document.documentElement.style.setProperty('--card-bg', '#ffffff');
+                document.documentElement.style.setProperty('--text-color', '#333');
+                document.documentElement.style.setProperty('--secondary-color', '#e9e9e9');
+                this.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                document.documentElement.style.setProperty('--dark-bg', '#1a1a1a');
+                document.documentElement.style.setProperty('--card-bg', '#2d2d2d');
+                document.documentElement.style.setProperty('--text-color', '#f9f9f9');
+                document.documentElement.style.setProperty('--secondary-color', '#2c2f33');
+                this.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+            isDarkMode = !isDarkMode;
+        });
+
+        // Custom cat paw cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.display = 'block';
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Initialize animations
+        window.addEventListener('scroll', checkFade);
+        window.addEventListener('load', () => {
+            type();
+            checkFade();
+        });
+    </script>
+</body>
+</html>

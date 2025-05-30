@@ -65,9 +65,17 @@ I'm a passionate software developer with expertise across multiple technologies.
 
 ![IDA Pro](https://img.shields.io/badge/IDA_Pro-5C2D91?style=for-the-badge&logo=ida-pro&logoColor=white)
 ![Ghidra](https://img.shields.io/badge/Ghidra-4A154B?style=for-the-badge&logo=ghidra&logoColor=white)
-![x64dbg](https://img.shields.io/badge/x64dbg-0078D4?style=for-the-badge&logo=x64dbg&logoColor=white)
 ![Radare2](https://img.shields.io/badge/Radare2-FF6B6B?style=for-the-badge&logo=radare2&logoColor=white)
 ![Binary Ninja](https://img.shields.io/badge/Binary_Ninja-FF7F00?style=for-the-badge&logo=binary-ninja&logoColor=white)
+
+### 🤖 Automation & DevOps
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-62E0D9?style=for-the-badge&logo=n8n&logoColor=white)
+![AI Automation](https://img.shields.io/badge/AI_Automation-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=for-the-badge&logo=zapier&logoColor=white)
 
 ### 🗄️ Databases
 
@@ -86,11 +94,17 @@ I'm a passionate software developer with expertise across multiple technologies.
 ## 📊 GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&theme=radical" alt="RedZONERROR's GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&theme=radical&count_private=true" alt="RedZONERROR's GitHub Stats" />
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=redzonerror&theme=radical" alt="RedZONERROR's GitHub Streak" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=redzonerror&layout=compact&theme=radical" alt="RedZONERROR's Top Languages" />
+<!-- Real-time language stats using direct GitHub API integration -->
+<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=redzonerror&layout=compact&theme=radical&langs_count=10&count_private=true&hide=jupyter%20notebook,tex&include_all_commits=true&card_width=500" alt="RedZONERROR's Top Languages" />
+
+<!-- Language breakdown by percentage -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=redzonerror&theme=radical" alt="Language Breakdown" /> <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=redzonerror&theme=radical" alt="Most Used Languages by Commit" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=redzonerror&theme=redical&bg_color=20232a&hide_border=true" alt="RedZONERROR's Contribution Graph" />
 </div>
 
 ## 📫 Connect With Me
@@ -109,7 +123,11 @@ I'm a passionate software developer with expertise across multiple technologies.
 
 ### Thanks for visiting my profile! 👨‍💻
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJkOTVxZzZjcnQyYmgxM3M3Z2ZmYnl3cjNtbWo5NHdjdjUxazJreiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1tvI9svkIWwpVYr/giphy.gif" width="200">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamI3bmYxazh0c3Awd3JnZnc2dG53aXNpd3pyN3Q5M2hsb2dkcjRsYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPnAiaMCws8nOsE/giphy.gif" width="200">
+
+<p>
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Remember to stay curious and keep coding! <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjBxaThrMnJkbWFzMHRvZHBsZ2RqenQ2dTNuM3I0ZmRxcDl1aW9qOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JIX9t2j0ZTN9S/giphy.gif" width="30">
+</p>
 
 </div>
 
