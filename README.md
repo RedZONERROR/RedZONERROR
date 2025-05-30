@@ -71,7 +71,6 @@ I'm a passionate software developer with expertise across multiple technologies.
 ### 🤖 Automation & DevOps
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-62E0D9?style=for-the-badge&logo=n8n&logoColor=white)
 ![AI Automation](https://img.shields.io/badge/AI_Automation-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
