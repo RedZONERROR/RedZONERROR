@@ -12,7 +12,11 @@
 
 I'm a passionate software developer with expertise across multiple technologies. I love building innovative solutions and exploring new technologies.
 
-- 🔭 I'm currently working on exciting software projects
+- 🔭 I'm currently working on:
+  - Creating innovative new software projects from scratch
+  - Improving existing projects with advanced features
+  - Performing complex data migration between different systems
+  - Developing secure and scalable applications
 - 🌱 I'm continuously learning and improving my skills
 - 💬 Ask me about anything tech-related
 - ⚡ Fun fact: I code best with a cup of coffee ☕
