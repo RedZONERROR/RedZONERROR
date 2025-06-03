@@ -93,15 +93,7 @@ I'm a passionate software developer with expertise across multiple technologies.
 ## 📊 GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&theme=radical&count_private=true" alt="RedZONERROR's GitHub Stats" />
-
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=redzonerror&theme=radical" alt="RedZONERROR's GitHub Streak" />
-
-<!-- Real-time language stats using direct GitHub API integration -->
-<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=redzonerror&layout=compact&theme=radical&langs_count=10&count_private=true&hide=jupyter%20notebook,tex&include_all_commits=true&card_width=500" alt="RedZONERROR's Top Languages" />
-
-<!-- Language breakdown by percentage -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=redzonerror&theme=radical" alt="Language Breakdown" /> <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=redzonerror&theme=radical" alt="Most Used Languages by Commit" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=redzonerror&theme=redical&bg_color=20232a&hide_border=true" alt="RedZONERROR's Contribution Graph" />
 </div>
