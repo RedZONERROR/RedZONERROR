@@ -92,7 +92,7 @@ I'm a passionate software developer with expertise across multiple technologies.
 
 ## 📊 GitHub Stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&theme=radical)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&theme=radical)
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=redzonerror&theme=redical&bg_color=20232a&hide_border=true" alt="RedZONERROR's Contribution Graph" />
 </div>
