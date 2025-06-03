@@ -124,8 +124,9 @@ I'm a passionate software developer with expertise across multiple technologies.
 
 If you want to collaborate on a project or need help with something, feel free to reach out to me!
 
-![snake gif](https://github.com/RedZONERROR/RedZONERROR/blob/output/github-contribution-grid-snake.svg)
 
-
-
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/redzonerror/redzonerror/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/redzonerror/redzonerror/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/redzonerror/redzonerror/output/github-snake.svg" />
+</picture>
