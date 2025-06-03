@@ -123,3 +123,9 @@ I'm a passionate software developer with expertise across multiple technologies.
 </div>
 
 If you want to collaborate on a project or need help with something, feel free to reach out to me!
+
+![snake gif](https://github.com/RedZONERROR/RedZONERROR/blob/output/github-contribution-grid-snake.gif)
+
+
+
+
