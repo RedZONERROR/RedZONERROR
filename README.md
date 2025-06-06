@@ -95,6 +95,13 @@ I'm a passionate software developer with expertise across multiple technologies.
 <div align="center">
 <img src="https://streak-stats.demolab.com/?user=redzonerror&theme=radical" alt="RedZONERROR's GitHub Streak" />
 
+## 🔥 GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&hide_border=true&title_color=00bfbf&text_color=00bfbf&icon_color=00bfbf&bg_color=0d1117" alt="RedZONERROR's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=redzonerror&layout=compact&hide_border=true&title_color=00bfbf&text_color=00bfbf&bg_color=0d1117" alt="RedZONERROR's Top Languages" />
+</div>
+
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=redzonerror&theme=redical&bg_color=20232a&hide_border=true" alt="RedZONERROR's Contribution Graph" />
 </div>
 
