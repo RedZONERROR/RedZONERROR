@@ -93,14 +93,8 @@ I'm a passionate software developer with expertise across multiple technologies.
 ## 📊 GitHub Stats
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=redzonerror&theme=radical" alt="RedZONERROR's GitHub Streak" />
-
-## 🔥 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=redzonerror&show_icons=true&count_private=true&hide_border=true&title_color=00bfbf&text_color=00bfbf&icon_color=00bfbf&bg_color=0d1117&include_all_commits=true" alt="RedZONERROR's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=redzonerror&layout=compact&hide_border=true&title_color=00bfbf&text_color=00bfbf&bg_color=0d1117&langs_count=8" alt="RedZONERROR's Top Languages" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=redzonerror&theme=dark&hide_border=true&background=0d1117&stroke=00bfbf&ring=00bfbf&fire=00bfbf&currStreakNum=00bfbf&sideNums=00bfbf&currStreakLabel=00bfbf&sideLabels=00bfbf&dates=00bfbf" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=redzonerror&layout=compact&hide_border=true&title_color=00bfbf&text_color=00bfbf&bg_color=0d1117&langs_count=8" alt="RedZONERROR's Top Languages" />
 </div>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=redzonerror&theme=redical&bg_color=20232a&hide_border=true" alt="RedZONERROR's Contribution Graph" />
